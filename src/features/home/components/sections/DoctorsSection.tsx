@@ -63,10 +63,6 @@ export default function DoctorsSection() {
                   <span className="text-sm text-gray-600">{doctor.rating}</span>
                   <span className="text-xs text-gray-500">({doctor.reviews})</span>
                 </div>
-                
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 font-light transition text-sm">
-                  View Details
-                </button>
               </div>
             </motion.div>
           ))}

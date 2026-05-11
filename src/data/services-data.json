@@ -11,7 +11,8 @@
       "Interventional ",
       "Personalized risk plans"
     ],
-    "features": ["Heart checkups", "Angioplasty", "Cardiac surgery"]
+    "features": ["Heart checkups", "Angioplasty", "Cardiac surgery"],
+    "component":"DiagnosticServices"
   },
 
   {

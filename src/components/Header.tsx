@@ -36,9 +36,10 @@ const XIcon = ({ size = 20 }: { size?: number }) => (
 const navLinks = [
   { name: 'Home', to: '/' },
   { name: 'About', to: '/about' },
-  { name: 'Gallery', to: '/gallery' }, 
   { name: 'Pharmacy', to: '/pharmacy' },
   { name: 'Doctors', to: '/doctors' },
+  { name: 'Gallery', to: '/gallery' },
+   { name: 'Career', to: '/career' }, 
   { name: 'Contact', to: '/contact' },
 ]
 
@@ -95,7 +96,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
         <div className="flex justify-between items-center h-auto">
           <Link to="/" className="flex items-center shrink-0">
-            <img src="/logo192.png" alt="Logo" className="h-24 w-auto object-contain" />
+            <img src="/logo192.png" alt="Logo" className="h-20 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -132,6 +133,7 @@ export default function Header() {
                         onMouseEnter={() => setIsDropdownOpen(true)}
                         className={`relative px-3 py-2 flex items-center gap-1 transition-colors duration-200 ${isServicesActive ? 'text-blue-600 font-bold' : 'text-gray-700 hover:text-blue-600'
                           }`}
+                          
                       >
                         Services
                         <ChevronDown size={18} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />

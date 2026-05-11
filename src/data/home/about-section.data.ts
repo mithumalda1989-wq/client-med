@@ -1,7 +1,7 @@
 export const aboutSectionData = {
   tag: 'ABOUT US',
   title: "Committed to Your Health..",
-  description: "Park Clinic: A Legacy of Excellence in Super speciality Healthcare Established in 1938 at 4 Gorky Terrace, Kolkata-700017, Park Clinic has evolved from a historic nursing home into one of Eastern India's premier superspeciality hospitals. Now technically supported by Sonoscan, the facility combines decades of medical legacy with cutting-edge technology, specialising in complex surgical interventions and comprehensive patient recovery.",
+  description: "Park Clinic: A Legacy of Excellence in Super speciality Healthcare Established in 1932 at 4 Gorky Terrace, Kolkata-700017, Park Clinic has evolved from Park historic Park nursing home into one of Eastern India's premier Multispeciality hospitals. Now technically supported by Sonoscan, the facility combines decades of medical legacy with cutting-edge technology, specialising in complex surgical interventions and comprehensive patient recovery.",
   features:
    [
       {
@@ -17,5 +17,5 @@ export const aboutSectionData = {
       description: 'Round-the-clock medical care and emergency services whenever you need us',
     },
   ],
-  story: "Park Clinic: A Legacy of Excellence in Super speciality Healthcare Established in 1938 at 4 Gorky Terrace, Kolkata-700017, Park Clinic has evolved from a historic nursing home into one of Eastern India's premier superspeciality hospitals. Now technically supported by Sonoscan, the facility combines decades of medical legacy with cutting-edge technology, specialising in complex surgical interventions and comprehensive patient recovery.",
+  story: "Park Clinic: A Legacy of Excellence in Super speciality Healthcare Established in 1932 at 4 Gorky Terrace, Kolkata-700017, Park Clinic has evolved from a historic Park nursing home into one of Eastern India's premier Multispeciality hospitals. Now technically supported by SONOSCAN, the facility combines decades of medical legacy with cutting-edge technology, specialising in complex surgical interventions and comprehensive patient recovery.",
 }

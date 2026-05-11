@@ -1,7 +1,7 @@
 export const infoSectionData = [
   {
-    label: 'Emergency Helpline',
-    value: 'Call 9775992022 / 9775992024',
+    label: 'Call Now',
+    value: '9775992022 / 9775992024',
     subLabel: '',
   },
   {
@@ -11,9 +11,10 @@ export const infoSectionData = [
   },
   {
     label: 'Location',
-    value: '4, Gorkey Terrace, Kol - 17',
+    value: '4, Gorkey Terrace, Kol - 17, Near Minto Park ',
     subLabel: '',
   },
+
   {
     label: 'Rating',
     value: '4.9/5',

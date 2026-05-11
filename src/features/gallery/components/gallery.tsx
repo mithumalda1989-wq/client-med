@@ -4,53 +4,137 @@ import { ChevronLeft, ChevronRight, ImageIcon, Maximize2, X } from "lucide-react
 
 const images = [
     { 
-        src: "/images/dept-cardio.jpg", 
-        title: "Cardiology Wing", 
-        category: "Facilities",
-        description: "Our world-class cardiology department equipped with the latest cardiac monitoring systems."
-    },
-    { 
-        src: "/images/dept-ortho.png", 
-        title: "Orthopaedic Center", 
+        src: "/images/ser1.png", 
+        title: "Park Sonoscan Services", 
         category: "Departments",
-        description: "Specialized care for bone and joint health, from diagnosis to rehabilitation."
+        description: "services related pictures."
+    },
+     { 
+        src: "/images/ser2.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
+    },
+      { 
+        src: "/images/ser3.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
+    },
+      { 
+        src: "/images/ser4.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
+    },
+      { 
+        src: "/images/ser-5.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
     },
     { 
-        src: "/images/dept-neuro.png", 
-        title: "Neurology Lab", 
-        category: "Technology",
-        description: "Advanced neuro-imaging and diagnostic tools for comprehensive brain and spine care."
+        src: "/images/ser6.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
+    },
+      { 
+        src: "/images/ser7.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
+    },
+      { 
+        src: "/images/ser8.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
+    },
+      { 
+        src: "/images/ser9.png", 
+        title: "Park Sonoscan Services", 
+        category: "Departments",
+        description: "services related pictures."
     },
     { 
-        src: "/images/dept-pedia.png", 
-        title: "Paediatric Ward", 
-        category: "Facilities",
-        description: "A child-friendly environment designed to provide comfort and care for our youngest patients."
-    },
-    { 
-        src: "/images/doc1.jpg", 
-        title: "Expert Consultation", 
-        category: "Team",
-        description: "Personalized healthcare consultations with our experienced medical professionals."
-    },
-    { 
-        src: "/images/doc2.jpg", 
-        title: "Our Specialists", 
-        category: "Team",
-        description: "A dedicated team of specialists committed to providing exceptional patient outcomes."
-    },
-    { 
-        src: "/images/featureimg.jpg", 
-        title: "Advanced Care", 
-        category: "Hospital",
-        description: "Integrating modern technology with compassionate care for complex medical needs."
-    },
-    { 
-        src: "/images/herobg.jpg", 
-        title: "Hospital Exterior", 
+        src: "/images/buil1.png", 
+        title: "Building Exterior", 
         category: "Building",
-        description: "Centrally located in Kolkata, our facility is easily accessible for all patients."
-    }
+        description: "Building Pictures."
+    },
+    { 
+        src: "/images/buil2.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+  { 
+        src: "/images/buil3.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+   { 
+        src: "/images/buil4.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+   { 
+        src: "/images/buil5.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+   { 
+        src: "/images/buil6.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+ { 
+        src: "/images/buil7.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+  { 
+        src: "/images/buil8.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+  { 
+        src: "/images/buil9.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+    { 
+        src: "/images/buil10.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+    { 
+        src: "/images/buil11.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+    { 
+        src: "/images/buil12.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
+    { 
+        src: "/images/buil13.png", 
+        title: "Building Exterior", 
+        category: "Building",
+        description: "Building Pictures."
+    },
 ];
 
 export default function Gallery() {

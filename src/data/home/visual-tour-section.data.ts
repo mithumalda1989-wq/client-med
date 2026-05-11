@@ -4,7 +4,7 @@ export const visualTourData = {
     description: "Take a virtual tour of our modern infrastructure, advanced diagnostic labs, and patient-centric wards designed for comfort and healing.",
     images: [
         { 
-            src: "/images/dept-cardio.jpg", 
+            src: "/images/dept-spine.jpg", 
             title: "Cardiology Wing", 
             category: "Facilities"
         },

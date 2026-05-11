@@ -1,10 +1,26 @@
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { aboutSectionData } from '@/data/home/about-section.data'
 
 export default function AboutSection() {
   const sectionRef = useRef(null)
   const inView = useInView(sectionRef, { once: false, margin: '0px 0px -150px 0px' })
+  const [activeImage, setActiveImage] = useState(0)
+
+  const slideshowImages = [
+    '/images/featureimg.jpg',
+    '/images/featureimg.jpeg',
+    '/images/featureimg.jpeg',
+    '/images/featureimg.jpeg',
+    '/images/featureimg.jpeg',
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveImage((current) => (current + 1) % slideshowImages.length)
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <section ref={sectionRef} className="bg-white py-20">
@@ -16,7 +32,7 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-blue-600 font-light text-sm mb-4">{aboutSectionData.tag}</p>
-            <h2 className="text-4xl font-light text-gray-900 mb-6">
+            <h2 className="text-3xl font-light text-gray-900 mb-6">
               {aboutSectionData.title}
             </h2>
             
@@ -34,9 +50,7 @@ export default function AboutSection() {
                 </div>
               ))}
             </div>
-            <button className="text-blue-600 font-light hover:underline flex items-center gap-2">
-              Learn more →
-            </button>
+            
           </motion.div>
           <motion.div
             className="relative"
@@ -44,12 +58,20 @@ export default function AboutSection() {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <div className="bg-gradient-to-br from-gray-200 to-gray-100 h-96 rounded-2xl overflow-hidden">
-              <img 
-                src="/images/featureimg.jpg" 
-                alt="Clinic Interior" 
+            <div className="bg-gradient-to-br from-gray-200 to-gray-100 h-96 rounded-2xl overflow-hidden relative">
+              <motion.img
+                key={slideshowImages[activeImage]}
+                src={slideshowImages[activeImage]}
+                alt="Clinic Interior"
                 className="w-full h-full object-cover"
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.04 }}
+                transition={{ duration: 0.8 }}
               />
+              <div className="absolute left-4 bottom-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-sm text-gray-800">
+                Image {activeImage + 1} of {slideshowImages.length}
+              </div>
             </div>
           </motion.div>
         </div>

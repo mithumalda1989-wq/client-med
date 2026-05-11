@@ -4,8 +4,8 @@ import AboutSection from './sections/AboutSection'
 import DepartmentsSection from './sections/DepartmentsSection'
 import EmergencyBannerSection from './sections/EmergencyBannerSection'
 import FeaturedServicesSection from './sections/FeaturedServicesSection'
-import DoctorsSection from './sections/DoctorsSection'
-import ExcellenceSection from './sections/ExcellenceSection'
+// import DoctorsSection from './sections/DoctorsSection'
+// import ExcellenceSection from './sections/ExcellenceSection'
 import AdditionalServicesSection from './sections/AdditionalServicesSection'
 import VisualTourSection from './sections/VisualTourSection'
 
@@ -18,8 +18,8 @@ export default function Home() {
       <DepartmentsSection />
       <EmergencyBannerSection />
       <FeaturedServicesSection />
-      <DoctorsSection />
-      <ExcellenceSection />
+      {/* <DoctorsSection /> */}
+      {/* <ExcellenceSection /> */}
       <VisualTourSection />
       <AdditionalServicesSection />
     </main>

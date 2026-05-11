@@ -1,13 +1,30 @@
 'use client'
 
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { heroSectionData } from '@/data/home/hero-section.data'
 import { Link } from '@tanstack/react-router'
 
 export default function HeroSection() {
   const sectionRef = useRef(null)
   const inView = useInView(sectionRef, { once: false, margin: '0px 0px -150px 0px' })
+  const [activeSlide, setActiveSlide] = useState(0)
+
+  const heroSlides = [
+    '/images/banner1.png',
+    '/images/banner2.png',
+    '/images/banner3.png',
+    '/images/banner4.png',
+    '/images/banner5.png',
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((current) => (current + 1) % heroSlides.length)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <section ref={sectionRef} className="bg-gradient-to-b from-blue-50 to-white py-20">
@@ -19,10 +36,10 @@ export default function HeroSection() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-blue-600 font-light text-sm mb-4">{heroSectionData.tag}</p>
-            <h1 className="text-5xl font-light text-gray-900 mb-6">
+            <h1 className="text-3xl font-light text-gray-900 mb-6">
               {heroSectionData.title}
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 mb-4">
               {heroSectionData.description}
             </p>
             
@@ -59,16 +76,20 @@ export default function HeroSection() {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-linear-to-br from-blue-200 to-blue-100 h-96 rounded-2xl flex items-center justify-center overflow-hidden">
-              <img 
-                src="/images/herobg.jpg" 
-                alt="Healthcare Professional" 
+            <div className="bg-gradient-to-br from-blue-200 to-blue-100 h-96 rounded-2xl flex items-center justify-center overflow-hidden relative">
+              <motion.img
+                key={heroSlides[activeSlide]}
+                src={heroSlides[activeSlide]}
+                alt="Healthcare Professional"
                 className="w-full h-full object-cover"
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.04 }}
+                transition={{ duration: 0.8 }}
               />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg p-4 max-w-xs">
-              <p className="font-light text-gray-900 mb-1">{heroSectionData.cardBox.title}</p>
-              <p className="text-sm text-gray-600">{heroSectionData.cardBox.description}</p>
+              <div className="absolute left-4 bottom-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full text-sm text-gray-800">
+                Slide {activeSlide + 1} of {heroSlides.length}
+              </div>
             </div>
           </motion.div>
         </div>

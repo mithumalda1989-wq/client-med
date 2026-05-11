@@ -11,116 +11,17 @@ import {
 const indoorServicesData = [
     {
         id: 1,
-        title: "Pathology",
-        icon: Microscope,
-        image:
-            "https://images.unsplash.com/photo-1579165466741-7f35e4755660?q=80&w=1200&auto=format&fit=crop",
-        tagline: "Advanced Laboratory Diagnostics",
-        description:
-            "Comprehensive pathology services including blood tests, hormone analysis, microbiology and advanced laboratory investigations with NABL accredited standards.",
-        highlights: [
-            "Blood Test",
-            "Biochemistry",
-            "Histopathology",
-            "Microbiology",
-        ],
-        features: [
-            "Routine Blood Test",
-            "Thyroid Profile",
-            "Diabetes Screening",
-            "Urine Examination",
-            "Liver Function Test",
-            "Kidney Function Test",
-        ],
-    },
-
-    {
-        id: 2,
-        title: "Radiology & Imaging",
-        icon: ScanLine,
-        image:
-            "https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=1200&auto=format&fit=crop",
-        tagline: "Modern Imaging & Diagnostics",
-        description:
-            "Advanced radiology department equipped with modern imaging technologies for accurate diagnosis and patient care.",
-        highlights: [
-            "MRI",
-            "CT Scan",
-            "Digital X-Ray",
-            "Ultrasonography",
-        ],
-        features: [
-            "MRI Scan",
-            "CT Scan",
-            "Color Doppler",
-            "Digital X-Ray",
-            "Ultrasonography",
-            "Mammography",
-        ],
-    },
-
-    {
-        id: 3,
-        title: "Cardiology",
-        icon: HeartPulse,
-        image:
-            "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=1200&auto=format&fit=crop",
-        tagline: "Complete Heart Care",
-        description:
-            "Expert cardiac diagnostics and consultation services with advanced cardiac monitoring systems.",
-        highlights: [
-            "ECG",
-            "Echo",
-            "Stress Test",
-            "Heart Checkup",
-        ],
-        features: [
-            "ECG",
-            "2D Echo",
-            "TMT",
-            "Holter Monitoring",
-            "Cardiac Consultation",
-            "Heart Risk Assessment",
-        ],
-    },
-
-    {
-        id: 4,
-        title: "Neurology",
-        icon: Brain,
-        image:
-            "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1200&auto=format&fit=crop",
-        tagline: "Brain & Nerve Care",
-        description:
-            "Comprehensive neurological consultation and diagnostic services for brain, spine and nervous system disorders.",
-        highlights: [
-            "EEG",
-            "Nerve Study",
-            "Brain Care",
-        ],
-        features: [
-            "Neurology Consultation",
-            "EEG",
-            "EMG",
-            "Nerve Conduction Study",
-            "Migraine Treatment",
-            "Stroke Evaluation",
-        ],
-    },
-
-    {
-        id: 5,
         title: "General Medicine",
         icon: Stethoscope,
-        image:
-            "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop",
-        tagline: "Expert Physician Consultation",
+        image:"/images/medi1.jpeg",
+            
+        tagline: "Excellence in Internal Medicine",
         description:
             "Multi-disciplinary outpatient consultation services with experienced physicians and specialists.",
         highlights: [
-            "OPD",
-            "Consultation",
-            "Preventive Care",
+            "Fever Treatment",
+            "Chronic Disease Care",
+            "Hypertension Care",
         ],
         features: [
             "Doctor Consultation",
@@ -131,30 +32,118 @@ const indoorServicesData = [
             "General OPD",
         ],
     },
-
     {
         id: 6,
-        title: "Health Checkup",
+        title: "Critical Care",
         icon: Activity,
-        image:
-            "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1200&auto=format&fit=crop",
-        tagline: "Preventive Health Packages",
+        image:"/images/icu1.jpeg",
+        tagline: "24×7 Advanced Intensive Care Support",
         description:
             "Affordable full body health checkup packages designed for early detection and preventive healthcare.",
         highlights: [
-            "Full Body Checkup",
-            "Preventive Care",
-            "Wellness",
+            "Life Support",
+            "Trauma Support",
+            "24×7 Monitoring",
         ],
         features: [
-            "Executive Health Package",
-            "Diabetes Package",
-            "Cardiac Package",
-            "Senior Citizen Package",
-            "Women Health Package",
+            "Multidisciplinary Critical Care Team",
+            "Round-the-Clock Specialist Supervision",
+            "High Dependency Unit (HDU) Facilities",
+            "Central Oxygen & Suction System",
+            "Post-Operative Critical Care Management",
             "Preventive Screening",
         ],
     },
+    {
+        id: 3,
+        title: "Paediatric Surgery With NICU & PICU",
+        icon: HeartPulse,
+        image:"/images/paed1.jpeg",
+        tagline: "Advanced Paediatrics & Child Wellness Care",
+        description:
+            'Merging with the Park Childrens Centre in 2009, this department provides "subsidised yet superior" care for newborns and children.',
+        highlights: [
+            "NICU",
+            "PICU",
+            "Neonatal Care",
+           
+        ],
+        features: [
+            "Treatments & OTs: Dedicated Pediatric Operation Theatres handle surgeries for congenital anomalies, paediatric urology, and neonatal emergencies.",
+            "Facilities: The Anubha Memorial Neonatal Ward features advanced neonatal ventilators and a specialized NICU/PICU for critical paediatric care.",
+           
+        ],
+    },
+      {
+        id: 4,
+        title: "General Surgery, Laparoscopic Surgery & Urosurgery",
+        icon: Brain,
+        image:"/images/lapsur1.jpeg",
+            
+        tagline: "Advanced Surgical & Urological Care",
+        description:
+            "Offering minimally invasive surgical procedures for both simple and complex conditions of the abdomen and pelvic area, the laparoscopic services offered at Park Sonoscan Clinic are both diagnostic and therapeutic. ",
+        highlights: [
+            "Expert Surgeons",
+            "Advanced Laparoscopy",
+            "Kidney & Bladder Care",
+        ],
+        features: [
+            "The hospital utilizes minimally invasive techniques to reduce post-operative pain and recovery time.",
+            "Treatments: Laparoscopic cholecystectomy, hernia repairs, and advanced urological procedures like TURP and kidney stone removal.",
+            
+        ],
+    },
+     {
+        id: 2,
+        title: "Orthopaedics & Spine Surgery",
+        icon: ScanLine,
+        image:"/images/ortho1.png",
+        tagline: "Advanced Bone & Spine Care",
+        description:
+            "The orthopaedic department focuses on restorative surgeries and advanced spine care.",
+        highlights: [
+            "Joint Care",
+            "Fracture Management",
+            "Sports Injury Care",
+            
+        ],
+        features: [
+            "Treatments & OTs: Specialized in Joint Replacements (Knee and Hip), Arthroscopy, and complex trauma management. The Park Spine Centre is a dedicated wing for spondylitis, spinal deformities, and disc surgeries.",
+            "Patient Satisfaction: High success rates in spine surgeries have made it a preferred center for Kolkata Traffic Police and other professional groups requiring high physical mobility.",
+           
+        ],
+    },
+    {
+        id: 5,
+        title: "Neurosurgery",
+        icon: Microscope,
+        image:"/images/neuro1.png",
+        tagline: "Brain & Spine Surgery (Neurosciences)",
+        description:
+            "Park Clinic is a recognised leader in neurosciences, boasting one of the most advanced neurosurgical setups in the region. State of the art 5 nos Operation Theater equipped with Neuronavigation, The most Advanced and robotic operating microscope,Intraoperative Ultrasound",
+        highlights: [
+            "Brain Surgery",
+            "Spine Surgery",
+            "Stroke Management",
+           
+        ],
+        features: [
+            "Treatments & OTs: The department is equipped with 5 dedicated neurosurgical operating theatres. It was among the first in the country to utilise Intraoperative Neuronavigation and Neuroendoscopy. Surgeons perform high-precision procedures for brain tumours, neurovascular disorders, and paediatric neurosurgery.",
+            "Post-Operative Care: A specialized Neuro-HDU (High Dependency Unit) and ITU ensure 24/7 monitoring by a three-tier medical team.",
+            
+        ],
+    },
+
+   
+
+    
+
+  
+
+    
+
+    
 ];
 
 const IndoorServices: React.FC = () => {
@@ -165,7 +154,7 @@ const IndoorServices: React.FC = () => {
                 {/* Heading */}
                 <div className="text-center mb-14">
                     <p className="text-blue-600 font-semibold uppercase tracking-[3px]">
-                        Sonoscan Healthcare
+                        Park Clinic
                     </p>
 
                     <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mt-3">
@@ -173,7 +162,7 @@ const IndoorServices: React.FC = () => {
                     </h1>
 
                     <p className="text-slate-600 mt-5 max-w-3xl mx-auto leading-relaxed">
-                        SONOSCAN provides advanced diagnostic, imaging and
+                        PARK CLINIC provides advanced diagnostic, imaging and
                         multi-speciality healthcare services with experienced
                         doctors and modern technologies under one roof.
                     </p>
@@ -208,7 +197,7 @@ const IndoorServices: React.FC = () => {
 
                                 {/* Content */}
                                 <div className="p-6">
-                                    <p className="text-sm text-blue-600 font-semibold uppercase tracking-wide">
+                                    <p className="text-sm text-blue-600 font-semibold uppercase tracking-wide text-justify">
                                         {service.tagline}
                                     </p>
 
@@ -216,7 +205,7 @@ const IndoorServices: React.FC = () => {
                                         {service.title}
                                     </h2>
 
-                                    <p className="text-slate-600 mt-4 leading-relaxed">
+                                    <p className="text-slate-600 mt-4 leading-relaxed text-justify">
                                         {service.description}
                                     </p>
 
@@ -237,11 +226,11 @@ const IndoorServices: React.FC = () => {
                                         {service.features.map((feature) => (
                                             <div
                                                 key={feature}
-                                                className="flex items-center gap-3 text-slate-700"
+                                                className="flex items-start gap-3 text-slate-700"
                                             >
-                                                <div className="w-2 h-2 rounded-full bg-blue-600" />
+                                                <div className="w-3 h-3 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex-shrink-0 mt-1.5 shadow" />
 
-                                                <p className="text-sm">
+                                                <p className="text-sm text-justify">
                                                     {feature}
                                                 </p>
                                             </div>

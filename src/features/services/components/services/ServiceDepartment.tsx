@@ -2,6 +2,9 @@
 import servicesData from "../../../../data/services-data.json";
 import IndoorServices from "../indoor-services";
 import OutdoorServices from "../outdoor-services";
+import DiagnosticServices from "../diagnostic-services";
+
+
 
 type ServiceDepartmentProps = {
     department: string;
@@ -119,6 +122,9 @@ function GrabComponent({
     }
     if (componentName === "IndoorServices") {
         return <IndoorServices />;
+    }
+       if (componentName === "DiagnosticServices") {
+        return <DiagnosticServices />;
     }
     return <div>Component not found.</div>;
 }

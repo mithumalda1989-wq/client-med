@@ -38,9 +38,7 @@ export default function DepartmentsSection() {
                 <li key={index}>• {service}</li>
               ))}
             </ul>
-            <button className="text-blue-600 font-light hover:underline self-start">
-              Explore →
-            </button>
+            
           </motion.div>
           <motion.div
             className="bg-gradient-to-br from-blue-200 to-blue-100 h-64 rounded-2xl overflow-hidden"
@@ -49,7 +47,7 @@ export default function DepartmentsSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img 
-              src="/images/dept-cardio.jpg" 
+              src="/images/dept-spine.jpg" 
               alt="Cardiology" 
               className="w-full h-full object-cover"
             />
@@ -83,9 +81,7 @@ export default function DepartmentsSection() {
                   <li key={sIdx}>• {service}</li>
                 ))}
               </ul>
-              <button className="text-blue-600 font-light hover:underline self-start">
-                Explore →
-              </button>
+            
             </motion.div>
           </div>
         ))}

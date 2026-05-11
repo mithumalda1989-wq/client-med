@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                 <span className="text-gray-800 font-light">C</span>
               </div>
-              <span className="text-xl font-light">Clinic</span>
+              <span className="text-xl font-light">Park Sonoscan Clinic</span>
             </div>
             <p className="text-gray-900 text-sm ">
               Providing exceptional healthcare with compassion and expertise.
@@ -24,14 +24,14 @@ export default function Footer() {
               <li><Link to="/" className="hover:text-gray-800">Home</Link></li>
               <li><Link to="/about" className="hover:text-gray-800">About Us</Link></li>
               <li><Link to="/services/$service" params={{ service: 'cardiology' }} className="hover:text-gray-800">Services</Link></li>
-              <li><Link to="/departments" className="hover:text-gray-800">Departments</Link></li>
+              <li><Link to="/departments" className="hover:text-gray-800">Doctors</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-light mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li><Link to="/services/$service" params={{ service: 'cardiology' }} className="hover:text-gray-800">Emergency Care</Link></li>
+              <li><Link to="/services/$service" params={{ service: 'About' }} className="hover:text-gray-800">Emergency Care</Link></li>
               <li><Link to="/services/$service" params={{ service: 'surgery' }} className="hover:text-gray-800">Surgery</Link></li>
               <li><Link to="/services/$service" params={{ service: 'neurology' }} className="hover:text-gray-800">Diagnostics</Link></li>
               <li><Link to="/services/$service" params={{ service: 'dental-care' }} className="hover:text-gray-800">Specialists</Link></li>
@@ -43,15 +43,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-gray-900 hover:text-gray-800 cursor-pointer">
                 <Phone size={16} />
-                <span>+1 (555) 911-2468</span>
+                <span>+91 9775992022 / 9775992024</span>
               </li>
               <li className="flex items-center gap-2 text-gray-900 hover:text-gray-800 cursor-pointer">
                 <Mail size={16} />
-                <span>contact@clinic.com</span>
+                <span>info@parkclinickolkata.com</span>
               </li>
               <li className="flex items-start gap-2 text-gray-900">
                 <MapPin size={16} className="mt-1" />
-                <span>abc city</span>
+                <span>4, Gorky Terrace, Minto Park, Kol - 17</span>
               </li>
             </ul>
           </div>

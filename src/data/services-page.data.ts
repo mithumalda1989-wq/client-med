@@ -18,14 +18,14 @@ export const servicesPageData = {
     },
     {
       name: "Orthopaedics & Spine Surgery",
-      image: "/images/dept-neuro.png",
+      image: "/images/dept-ortho.png",
       description:
         "The orthopaedic department focuses on restorative surgeries and advanced spine care.",
       features: ["Treatments & OTs: Specialized in Joint Replacements (Knee and Hip), Arthroscopy, and complex trauma management. The Park Spine Centre is a dedicated wing for spondylitis, spinal deformities, and disc surgeries.", "Key Doctors :", "Patient Satisfaction  High success rates in spine surgeries have made it a preferred center for Kolkata Traffic Police and other professional groups requiring high physical mobility."],
     },
     {
       name: "Paediatrics & Childcare",
-      image: "/images/dept-ortho.png",
+      image: "/images/dept-paed.png",
       description:
         'Merging with the Park Childrens Centre in 2009, this department provides "subsidised yet superior" care for newborns and children..',
       features: ["Treatments & OTs: Dedicated Pediatric Operation Theatres handle surgeries for congenital anomalies, paediatric urology, and neonatal emergencies.", "Facilities: The Anubha Memorial Neonatal Ward features advanced neonatal ventilators and a specialized NICU/PICU for critical paediatric care.", "Key Doctors: Dr. Subir Kr. Chatterjee (Emeritus/Consultant with decades of pediatric expertise), Dr. Ashoke Kr. Basu "],
