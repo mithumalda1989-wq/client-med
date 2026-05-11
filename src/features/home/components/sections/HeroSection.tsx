@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { heroSectionData } from '@/data/home/hero-section.data'
+import { Link } from '@tanstack/react-router'
 
 export default function HeroSection() {
   const sectionRef = useRef(null)
@@ -35,7 +36,9 @@ export default function HeroSection() {
                       : 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50'
                   }`}
                 >
+                  <Link to={btn.link} target={btn.target ?? '_self'} >
                   {btn.text}
+                  </Link>
                 </button>
               ))}
             </div>

@@ -130,27 +130,24 @@ export default function About() {
       </section>
 
   
-      <section ref={accrRef} className="bg-white py-16">
+      <section ref={accrRef} className="bg-gradient-to-br from-gray-50 to-blue-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h3
-            className="text-3xl font-light text-gray-900 mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={accrInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={accrInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
           >
-            {data.accreditations.title}
-          </motion.h3>
-          <motion.p
-            className="text-gray-600 text-lg mb-12"
-            initial={{ opacity: 0 }}
-            animate={accrInView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            {data.accreditations.description}
-          </motion.p>
+            <h3 className="text-4xl font-light text-gray-900 mb-6">
+              {data.accreditations.title}
+            </h3>
+            <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+              {data.accreditations.description}
+            </p>
+          </motion.div>
 
           <motion.div
-            className="grid md:grid-cols-5 gap-4"
+            className="grid md:grid-cols-5 gap-6"
             variants={containerVariants}
             initial="hidden"
             animate={accrInView ? 'show' : 'hidden'}
@@ -158,12 +155,30 @@ export default function About() {
             {[...Array(data.accreditations.count)].map((_, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-50 h-24 rounded-lg flex items-center justify-center border-2 border-blue-600"
+                className="group bg-white h-32 rounded-xl flex flex-col items-center justify-center border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2"
                 variants={itemVariants}
               >
-                <p className="text-gray-600 font-light text-center">Certification {index + 1}</p>
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p className="text-gray-700 font-medium text-center text-sm group-hover:text-blue-600 transition-colors duration-300">
+                  Certification {index + 1}
+                </p>
               </motion.div>
             ))}
+          </motion.div>
+
+          <motion.div
+            className="text-center mt-12"
+            initial={{ opacity: 0 }}
+            animate={accrInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <p className="text-gray-500 text-sm">
+              Our certifications ensure the highest standards of healthcare excellence
+            </p>
           </motion.div>
         </div>
       </section>

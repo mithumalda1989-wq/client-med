@@ -17,7 +17,7 @@ export const departmentsPageData = {
       services: ['Minimally Invasive', 'Advanced Procedures', 'Safe Operations', 'Recovery Support'],
     },
     {
-      name: 'Dental Care',
+      name: 'Dental Care1',
       title: 'Dental Care Department',
       description: 'Suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.',
       services: ['Oral Health', 'Teeth Cleaning', 'Cosmetic Dentistry', 'Orthodontics'],
@@ -29,14 +29,14 @@ export const departmentsPageData = {
       services: ['Vision Testing', 'Retinal Imaging', 'Laser Surgery', 'Eye Care Plans'],
     },
     {
-      name: 'Cardiology',
-      title: 'Cardiology Department',
+      name: 'Cardiology1',
+      title: 'Cardiology1',
       description: 'In voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.',
       services: ['Heart Monitoring', 'ECG Analysis', 'Blood Tests', 'Preventive Care'],
     },
   ],
   departmentsGrid: [
-    { name: 'Cardiology', description: 'Comprehensive heart care with advanced diagnostic tools and expert cardiologists dedicated to your cardiovascular health.' },
+    { name: 'Cardiology1', description: 'Comprehensive heart care with advanced diagnostic tools and expert cardiologists dedicated to your cardiovascular health.' },
     { name: 'Neurology', description: 'Advanced treatment for neurological disorders with cutting-edge technology and specialized neurological care teams.' },
     { name: 'Orthopedics', description: 'Expert bone and joint care offering comprehensive treatment from sports injuries to complex reconstructive surgery.' },
     { name: 'Pediatrics', description: 'Specialized medical care for infants, children, and adolescents with compassionate pediatric specialists.' },

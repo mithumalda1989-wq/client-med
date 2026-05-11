@@ -1,5 +1,7 @@
 
 import servicesData from "../../../../data/services-data.json";
+import IndoorServices from "../indoor-services";
+import OutdoorServices from "../outdoor-services";
 
 type ServiceDepartmentProps = {
     department: string;
@@ -14,6 +16,7 @@ type ServiceDepartmentData = {
     icon?: string;
     highlights?: Array<string>;
     features: Array<string>;
+    component?:string
 };
 
 function getDepartmentData(department: string) {
@@ -25,8 +28,15 @@ function getDepartmentData(department: string) {
 const ServiceDepartment: React.FC<ServiceDepartmentProps> = ({ department }) => {
     const data = getDepartmentData(department);
     if (!data) return <div>Service not found.</div>;
+    
     return (
-        <div className="max-w-6xl mx-auto py-12 px-6">
+        <>
+        {
+            data.component?
+            <GrabComponent componentName={data.component}/>
+            :
+
+       ( <div className="max-w-6xl mx-auto py-12 px-6">
             <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] items-center">
                 <div>
                     <p className="text-sm uppercase tracking-widest text-blue-600 font-semibold">
@@ -88,8 +98,27 @@ const ServiceDepartment: React.FC<ServiceDepartmentProps> = ({ department }) => 
                     ))}
                 </div>
             </div>
-        </div>
+        </div>)
+        }
+</>
     );
 };
 
 export default ServiceDepartment;
+
+type GrabComponentProps = {
+    componentName: string;
+};
+
+function GrabComponent({
+    componentName,
+}: GrabComponentProps) {
+
+    if (componentName === "OutdoorServices") {
+        return <OutdoorServices />;
+    }
+    if (componentName === "IndoorServices") {
+        return <IndoorServices />;
+    }
+    return <div>Component not found.</div>;
+}

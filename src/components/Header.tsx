@@ -36,8 +36,8 @@ const XIcon = ({ size = 20 }: { size?: number }) => (
 const navLinks = [
   { name: 'Home', to: '/' },
   { name: 'About', to: '/about' },
-  { name: 'Gallery', to: '/gallery' },
-  { name: 'Departments', to: '/departments' },
+  { name: 'Gallery', to: '/gallery' }, 
+  { name: 'Pharmacy', to: '/pharmacy' },
   { name: 'Doctors', to: '/doctors' },
   { name: 'Contact', to: '/contact' },
 ]
@@ -49,11 +49,11 @@ export default function Header() {
   const location = useLocation()
 
   const serviceLinks = [
-    { name: 'Neurology', slug: 'neurology' },
-    { name: 'Surgery', slug: 'surgery' },
-    { name: 'Dental Care', slug: 'dental-care' },
-    { name: 'Ophthalmology', slug: 'ophthalmology' },
-    { name: 'Cardiology', slug: 'cardiology' },
+    { name: 'Indoor Services', slug: 'Indoor Services' },
+    { name: 'Diagnostic Services', slug: 'Diagnostic Services' },
+    { name: 'Outdoor Services', slug: 'Outdoor Services' },
+    
+   
   ]
 
   const isServicesActive = location.pathname.startsWith('/services')
@@ -92,10 +92,10 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-light text-gray-900 shrink-0">
-            <img src="/logo192.png" alt="Logo" className="h-10 md:h-12 w-auto" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
+        <div className="flex justify-between items-center h-auto">
+          <Link to="/" className="flex items-center shrink-0">
+            <img src="/logo192.png" alt="Logo" className="h-24 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -123,7 +123,7 @@ export default function Header() {
               )
 
               // We want to insert Services between Gallery and Departments
-              if (link.name === 'Departments') {
+              if (link.name === 'Pharmacy') {
                 return (
                   <div key="services-nav-group" className="flex items-center gap-4">
                     <div className="relative group">

@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PharmacyRouteImport } from './routes/pharmacy'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as DoctorsRouteImport } from './routes/doctors'
 import { Route as DepartmentsRouteImport } from './routes/departments'
@@ -17,6 +18,11 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesServiceRouteImport } from './routes/services/$service'
 
+const PharmacyRoute = PharmacyRouteImport.update({
+  id: '/pharmacy',
+  path: '/pharmacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
@@ -60,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/departments': typeof DepartmentsRoute
   '/doctors': typeof DoctorsRoute
   '/gallery': typeof GalleryRoute
+  '/pharmacy': typeof PharmacyRoute
   '/services/$service': typeof ServicesServiceRoute
 }
 export interface FileRoutesByTo {
@@ -69,6 +76,7 @@ export interface FileRoutesByTo {
   '/departments': typeof DepartmentsRoute
   '/doctors': typeof DoctorsRoute
   '/gallery': typeof GalleryRoute
+  '/pharmacy': typeof PharmacyRoute
   '/services/$service': typeof ServicesServiceRoute
 }
 export interface FileRoutesById {
@@ -79,6 +87,7 @@ export interface FileRoutesById {
   '/departments': typeof DepartmentsRoute
   '/doctors': typeof DoctorsRoute
   '/gallery': typeof GalleryRoute
+  '/pharmacy': typeof PharmacyRoute
   '/services/$service': typeof ServicesServiceRoute
 }
 export interface FileRouteTypes {
@@ -90,6 +99,7 @@ export interface FileRouteTypes {
     | '/departments'
     | '/doctors'
     | '/gallery'
+    | '/pharmacy'
     | '/services/$service'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -99,6 +109,7 @@ export interface FileRouteTypes {
     | '/departments'
     | '/doctors'
     | '/gallery'
+    | '/pharmacy'
     | '/services/$service'
   id:
     | '__root__'
@@ -108,6 +119,7 @@ export interface FileRouteTypes {
     | '/departments'
     | '/doctors'
     | '/gallery'
+    | '/pharmacy'
     | '/services/$service'
   fileRoutesById: FileRoutesById
 }
@@ -118,11 +130,19 @@ export interface RootRouteChildren {
   DepartmentsRoute: typeof DepartmentsRoute
   DoctorsRoute: typeof DoctorsRoute
   GalleryRoute: typeof GalleryRoute
+  PharmacyRoute: typeof PharmacyRoute
   ServicesServiceRoute: typeof ServicesServiceRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/pharmacy': {
+      id: '/pharmacy'
+      path: '/pharmacy'
+      fullPath: '/pharmacy'
+      preLoaderRoute: typeof PharmacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/gallery': {
       id: '/gallery'
       path: '/gallery'
@@ -182,6 +202,7 @@ const rootRouteChildren: RootRouteChildren = {
   DepartmentsRoute: DepartmentsRoute,
   DoctorsRoute: DoctorsRoute,
   GalleryRoute: GalleryRoute,
+  PharmacyRoute: PharmacyRoute,
   ServicesServiceRoute: ServicesServiceRoute,
 }
 export const routeTree = rootRouteImport
