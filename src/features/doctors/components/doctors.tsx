@@ -1,10 +1,9 @@
 'use client'
 
-import React from "react";
 import { UserRound } from "lucide-react";
 import { doctorsPageData } from '@/data/doctors/doctors-page.data';
 
-const Doctors: React.FC = () => {
+const Doctors = () => {
     const { doctors } = doctorsPageData;
 
     // Group doctors by their title (department)

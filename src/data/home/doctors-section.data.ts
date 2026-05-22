@@ -1,4 +1,6 @@
-export const doctorsSectionData = {
+import type { Doctor } from '../doctors/doctor';
+
+export const doctorsSectionData: { tag: string; title: string; description: string; doctors: Doctor[] } = {
   tag: 'OUR DOCTORS',
   title: 'Find a Doctor',
   description: 'Find Your Perfect Healthcare Provider',

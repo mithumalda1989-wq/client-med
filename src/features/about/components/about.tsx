@@ -1,15 +1,13 @@
 import { motion, useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { aboutPageData as data } from '@/data/about/about.data'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
-import { X, ZoomIn } from 'lucide-react'
+import { ZoomIn } from 'lucide-react'
 
 export default function About() {
-  const statsRef = useRef(null)
-  const valuesRef = useRef(null)
-  const accrRef = useRef(null)
-  const [selectedAccreditation, setSelectedAccreditation] = useState(null)
-
+  const statsRef = useRef<HTMLElement>(null)
+  const valuesRef = useRef<HTMLElement>(null)
+  const accrRef = useRef<HTMLElement>(null)
   const statsInView = useInView(statsRef, { once: true, margin: '0px 0px -100px 0px' })
   const valuesInView = useInView(valuesRef, { once: true, margin: '0px 0px -100px 0px' })
   const accrInView = useInView(accrRef, { once: true, margin: '0px 0px -100px 0px' })
@@ -184,18 +182,18 @@ export default function About() {
                     </div>
                   </div>
                 </DialogTrigger>
-                <DialogContent className="w-screen h-screen max-w-none bg-white overflow-hidden p-0 fixed inset-0 z-50">
+                <DialogContent className="w-[98vw] h-[98vh] max-w-none bg-white overflow-hidden p-0">
                   <div className="flex flex-col h-full">
-                    <div className="flex-shrink-0 p-4 bg-black/80 backdrop-blur-sm">
-                      <DialogTitle className="text-xl text-center text-white">NABH Hospital Accreditation</DialogTitle>
+                    <DialogHeader className="flex-shrink-0 p-6 bg-white border-b">
+                      <DialogTitle className="text-2xl text-center text-gray-900">NABH Hospital Accreditation</DialogTitle>
+                    </DialogHeader>
+                    <div className="flex-1 flex items-center justify-center bg-gray-50 p-8">
+                      <img src="/images/nabh.png" alt="NABH Hospital" className="max-w-full max-h-full object-contain" />
                     </div>
-                    <div className="flex-1 flex items-center justify-center bg-black">
-                      <img src="/images/nabh.png" alt="NABH Hospital" className="w-full h-full object-contain" />
-                    </div>
-                    <div className="flex-shrink-0 p-4 bg-black/80 backdrop-blur-sm">
+                    <div className="flex-shrink-0 p-6 bg-white border-t">
                       <div className="text-center max-w-4xl mx-auto">
-                        <p className="text-white text-base font-medium mb-1">National Accreditation Board for Hospitals & Healthcare Providers</p>
-                        <p className="text-gray-200 text-sm leading-relaxed">Our hospital has been accredited by NABH, ensuring the highest standards of patient safety, care quality, and operational excellence in healthcare delivery.</p>
+                        <p className="text-gray-700 text-lg font-medium mb-2">National Accreditation Board for Hospitals & Healthcare Providers</p>
+                        <p className="text-gray-600 leading-relaxed">Our hospital has been accredited by NABH, ensuring the highest standards of patient safety, care quality, and operational excellence in healthcare delivery.</p>
                       </div>
                     </div>
                   </div>

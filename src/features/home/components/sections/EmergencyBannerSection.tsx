@@ -10,8 +10,7 @@ export default function EmergencyBannerSection() {
             <p className="text-lg text-blue-100 max-w-2xl mb-2">
               {emergencyBannerData.description}
             </p>
-            <p className="text-xl font-light text-white">{emergencyBannerData.phoneNumber}</p>
-            <p className="text-sm text-blue-100 mt-2">{emergencyBannerData.additionalInfo}</p>
+            <p className="text-xl font-light text-white">{emergencyBannerData?.phoneNumber}</p>
           </div>
           <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-light hover:bg-gray-100 transition whitespace-nowrap ml-0 md:ml-8">
             {emergencyBannerData.buttonText}

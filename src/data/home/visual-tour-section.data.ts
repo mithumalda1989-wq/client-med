@@ -13,11 +13,7 @@ export const visualTourData = {
             title: "Orthopaedic Center", 
             category: "Departments"
         },
-        { 
-            src: "/images/dept-neuro.png", 
-            title: "Neurology Lab", 
-            category: "Technology"
-        },
+     
         { 
             src: "/images/dept-pedia.png", 
             title: "Paediatric Ward", 

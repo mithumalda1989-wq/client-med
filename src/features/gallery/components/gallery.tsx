@@ -5,15 +5,15 @@ import { ChevronLeft, ChevronRight, ImageIcon, Maximize2, X } from "lucide-react
 const images = [
     { 
         src: "/images/ser1.png", 
-        title: "Park Sonoscan Services", 
+        title: "ICU", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
      { 
         src: "/images/ser2.png", 
-        title: "Park Sonoscan Services", 
+        title: "Neurosurgery OT", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
       { 
         src: "/images/ser3.png", 
@@ -23,117 +23,165 @@ const images = [
     },
       { 
         src: "/images/ser4.png", 
-        title: "Park Sonoscan Services", 
+        title: "Neurosurgery OT", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
       { 
         src: "/images/ser-5.png", 
-        title: "Park Sonoscan Services", 
+        title: "Orthopaedic Surgery", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
     { 
         src: "/images/ser6.png", 
-        title: "Park Sonoscan Services", 
+        title: "CT Scan", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
       { 
         src: "/images/ser7.png", 
-        title: "Park Sonoscan Services", 
+        title: "MRI", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
       { 
         src: "/images/ser8.png", 
-        title: "Park Sonoscan Services", 
+        title: "Ultrasonography", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
       { 
         src: "/images/ser9.png", 
-        title: "Park Sonoscan Services", 
+        title: "Emergency", 
         category: "Departments",
-        description: "services related pictures."
+        description: "Park Sonoscan Services."
     },
     { 
         src: "/images/buil1.png", 
-        title: "Building Exterior", 
+        title: "Medicine Counter at First Floor & Ground Floor", 
         category: "Building",
         description: "Building Pictures."
     },
     { 
         src: "/images/buil2.png", 
-        title: "Building Exterior", 
+        title: "Reception at First Floor", 
         category: "Building",
         description: "Building Pictures."
     },
   { 
         src: "/images/buil3.png", 
-        title: "Building Exterior", 
+        title: "Enquiry at Ground Floor", 
         category: "Building",
         description: "Building Pictures."
     },
    { 
         src: "/images/buil4.png", 
-        title: "Building Exterior", 
+        title: "Waiting Lounge at First Floor", 
         category: "Building",
         description: "Building Pictures."
     },
    { 
         src: "/images/buil5.png", 
-        title: "Building Exterior", 
+        title: "Main Enterance", 
         category: "Building",
         description: "Building Pictures."
     },
    { 
         src: "/images/buil6.png", 
-        title: "Building Exterior", 
+        title: "General Ward", 
         category: "Building",
         description: "Building Pictures."
     },
  { 
         src: "/images/buil7.png", 
-        title: "Building Exterior", 
+        title: "Corridor at Paediatric Unit", 
         category: "Building",
         description: "Building Pictures."
     },
   { 
         src: "/images/buil8.png", 
-        title: "Building Exterior", 
+        title: "Corridor at General Ward", 
         category: "Building",
         description: "Building Pictures."
     },
   { 
         src: "/images/buil9.png", 
-        title: "Building Exterior", 
+        title: "Outdoor Reception at 6th Floor", 
         category: "Building",
         description: "Building Pictures."
     },
     { 
         src: "/images/buil10.png", 
-        title: "Building Exterior", 
+        title: "Waiting Area for Outdoor Patients", 
         category: "Building",
         description: "Building Pictures."
     },
     { 
         src: "/images/buil11.png", 
-        title: "Building Exterior", 
+        title: "OOperation Theatre at Fifth Floor", 
         category: "Building",
         description: "Building Pictures."
     },
     { 
         src: "/images/buil12.png", 
-        title: "Building Exterior", 
+        title: "Conference Hall at Sixth Floor", 
         category: "Building",
         description: "Building Pictures."
     },
     { 
         src: "/images/buil13.png", 
-        title: "Building Exterior", 
+        title: "Conference Hall at Sixth Floor", 
         category: "Building",
         description: "Building Pictures."
+    },
+        { 
+        src: "/images/oth1.png", 
+        title: "CME", 
+        category: "Others",
+        description: "Moments of Connetion."
+    },
+            { 
+        src: "/images/oth2.png", 
+        title: "Cultural Programme", 
+        category: "Others",
+        description: "Moments of Connetion."
+    },
+            { 
+        src: "/images/oth3.png", 
+        title: "CME", 
+        category: "Others",
+        description: "Moments of Connetion."
+    },
+            { 
+        src: "/images/oth4.png", 
+        title: "CME", 
+        category: "Others",
+        description: "Moments of Connetion."
+    },
+            { 
+        src: "/images/oth5.png", 
+        title: "Birthday Celebration", 
+        category: "Others",
+        description: "Moments of Connetion."
+    },
+            { 
+        src: "/images/oth6.png", 
+        title: "CME", 
+        category: "Others",
+        description: "Moments of Connetion."
+    },
+            { 
+        src: "/images/oth7.png", 
+        title: "BIrthday Celebration", 
+        category: "Others",
+        description: "Moments of Connetion."
+    },
+            { 
+        src: "/images/oth8.png", 
+        title: "BIrthday Celebration", 
+        category: "Others",
+        description: "Moments of Connetion."
     },
 ];
 
